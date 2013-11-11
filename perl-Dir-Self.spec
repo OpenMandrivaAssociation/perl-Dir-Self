@@ -1,15 +1,15 @@
 %define upstream_name    Dir-Self
-%define upstream_version 0.10
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	A __DIR__ constant for the directory your source file is in
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dir/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Dir/Dir-Self-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -63,3 +63,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Jul 16 2010 cpan2dist 0.10-1mdv
 - initial mdv release, generated with cpan2dist
+
