@@ -8,7 +8,7 @@ Release:	3
 Summary:	A __DIR__ constant for the directory your source file is in
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Dir/Dir-Self-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
