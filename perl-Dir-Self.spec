@@ -2,14 +2,14 @@
 %define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	A __DIR__ constant for the directory your source file is in
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dir/Dir-Self-%{upstream_version}.tar.gz
+Url:		https://github.com/mauke/Dir-Self
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAUKE/Dir-Self-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
