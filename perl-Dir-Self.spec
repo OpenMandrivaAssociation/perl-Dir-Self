@@ -1,15 +1,13 @@
 %define upstream_name    Dir-Self
-%define upstream_version 0.11
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.11
+Release:	5
 
 Summary:	A __DIR__ constant for the directory your source file is in
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/mauke/Dir-Self
-Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAUKE/Dir-Self-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAUKE/Dir-Self-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -35,7 +33,7 @@ qw(:static)' will create a true '__DIR__' constant in your package that
 contains the directory name at the point of 'use'.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
