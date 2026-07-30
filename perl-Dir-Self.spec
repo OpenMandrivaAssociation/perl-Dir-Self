@@ -1,13 +1,14 @@
 %define upstream_name    Dir-Self
+%define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	5
+Release:	1
 
 Summary:	A __DIR__ constant for the directory your source file is in
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/mauke/Dir-Self
-Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAUKE/Dir-Self-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MA/MAUKE/Dir-Self-0.11.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -49,17 +50,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 0.100.0-2mdv2011.0
-+ Revision: 658747
-- rebuild for updated spec-helper
-
-* Fri Jul 16 2010 Jérôme Quelin <jquelin@mandriva.org> 0.100.0-1mdv2011.0
-+ Revision: 554171
-- import perl-Dir-Self
-
-
-* Fri Jul 16 2010 cpan2dist 0.10-1mdv
-- initial mdv release, generated with cpan2dist
 
