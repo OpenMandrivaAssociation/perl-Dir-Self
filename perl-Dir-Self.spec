@@ -2,7 +2,7 @@
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	2
+Release:	3
 
 Summary:	A __DIR__ constant for the directory your source file is in
 License:	GPL+ or Artistic
